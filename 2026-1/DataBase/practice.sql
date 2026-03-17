@@ -2,12 +2,7 @@
 DROP TABLE IF EXISTS students;
 
 -- 학생 테이블 생성
-CREATE TABLE students (
-    id INTEGER PRIMARY KEY AUTOINCREMENT, -- 자동으로 증가하는 고유 번호
-    name TEXT NOT NULL,                   -- 이름 (빈칸 허용 안 함)
-    major TEXT,                          -- 전공
-    admission_year INTEGER               -- 입학 연도
-);
+CREATE TABLE 연예인 (이름 varchar(10),키 int,나이 int,몸무게 int);
 
 INSERT INTO students (name, major, admission_year) 
 VALUES ('박민경', '데이터사이언스', 2024);
