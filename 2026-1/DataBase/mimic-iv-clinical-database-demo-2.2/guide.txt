@@ -1,0 +1,32 @@
+알파벳순 정리
+admissions: 입퇴원 기록
+caregiver: 간호사 ID
+chartevents: 차트 기록. 생체 신호(맥박, 혈압 등)
+d_hcpcs: 의료 행위/서비스 코드 사전. 병원 청구 항목 설명
+d_icd_diagnoses: 질병 코드 사전. ICD-9/10 기반 병명 텍스트 저장
+d_items: 아이템 ID 사전. 측정 항목(체온, 맥박 등) 정의
+d_labitems: 검사 항목 사전. 검사 종류 설명
+datetimeevents: 시간 관련 이벤트 기록
+diagnoses_icd: 진단명 정보
+drgcodes: 진단명 기준 환자군(DRG). 비용 산정 및 중증도 파악용 코드
+emar: 전자 투약 기록(eMAR). 바코드 기반 실제 투약 데이터
+emar_detail: 투약 상세 정보. 약물 용량 및 투여 속도 등
+hcpcsevents: 의료 서비스 청구 기록. 구체적 내역 포함
+icustays: ICU 입실 기록
+ingredientevents: 약물 성분 데이터. 복합 약물의 화학적 성분 단위 정보
+inputevents: 수액/주사 투여 기록
+labevents: 검사 결과 수치
+microbiologyevents: 미생물 검사 결과. 균 검출 및 항생제 내성 정보
+omr: 기타 외래 기록. 혈압, 체중 등 정기 측정 수치
+outputevents: 배설량 기록. 소변량 등 액체 배출량
+patients: 환자 기본 정보 (성별, 나이 등)
+pharmacy: 약국 조제 기록
+poe: 의사 처방 입력(POE). 투약 및 처치 지시 사항
+poe_detail: 처방 상세 옵션 및 구체적 지시 내용
+prescriptions: 처방 내역. 약물 이름 및 용량
+procedureevents: 처치 기록. ICU 내 시술 내역
+procedures_icd: 시술 기록. 국제 표준 코드(ICD) 기반 처치 내용
+provider: 의사 ID
+services: 진료과 기록. 진료과 변경 이력 포함
+subject_id: 환자 고유 ID
+transfer: 병동 이동 기록. 일반 병실 및 중환자실 간 이동 내역
