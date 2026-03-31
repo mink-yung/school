@@ -1,26 +1,18 @@
 ```mermaid
 
 erDiagram
-    IMG {
-        bigint id PK
-        varchar type  "ENUM 문자열 (SubImpmType)"
-        boolean is_approved
-        varchar title
+     inputevents{
+        INTEGER subject_id FK "환자별 ID"
+        INTEGER hadm_id FK "환자의 병원 입원별 ID"
+        INTEGER stay_id FK "환자의 ICU 체류별 ID"
+        INTEGER caregiver_id "ICU 정보 시스템에 데이터를 기록한 단일 의료진의 ID"
+        TIMESTAMP starttime "투입 및 배출 시작 시점"
     }
 
     IMG || --o{ ATTCH : "id"
     IMG || --o{ DWLD_LOG : "id"
 
 ```
-```mermaid
-erDiagram
-    PATIENTS ||--o{ ADMISSIONS : "subject_id"
-    ADMISSIONS ||--o{ INPUTEVENTS : "hadm_id"
-    ADMISSIONS ||--o{ PROCEDUREEVENTS : "hadm_id"
-    ICUSTAYS ||--o{ INPUTEVENTS : "stay_id"
-
-```
-
 ```mermaid
 
 erDiagram
